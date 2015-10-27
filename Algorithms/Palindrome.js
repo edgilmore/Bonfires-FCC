@@ -1,16 +1,21 @@
 /**
  * Created by edgilmore on 10/26/2015.
  */
-//not working yet...
-function palindrome(str) {
-    var regex = '/\s+/gi';
-    str = str.toLowerCase();
-    str = str.replace(regex, '');
-    console.log( str);
-    // Good luck!
-    return true;
+'use strict';
+function reverse(str){
+    return str.split('').reverse().join('');
 }
-
-
-
+function palindrome(str) {
+    // Good luck!
+    var regexPattern = new RegExp('[^a-zA-Z0-9]+', 'g');
+    console.log(regexPattern);
+    str = str.replace(regexPattern, '').toLowerCase();
+    console.log(str);
+    if(str === reverse(str)){
+        console.log('true');
+        return true;
+    }
+    console.log('false');
+    return false;
+}
 palindrome("eye");
