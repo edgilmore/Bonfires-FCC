@@ -6,18 +6,21 @@ function checkStringLength(str, num){
     return str.length > num;
 }
 
-function addThreeDots(str){
-    return checkStringLength(str, 3);
+function addThreeDots(str, num){
+    return checkStringLength(str, num);
 }
 
 function truncate(str, num) {
     // Clear out that junk in your trunk
     if(checkStringLength(str, num))
     {
-        str = str.slice(num);
+        str = str.slice(num - 3);
     }
-
+    if(addThreeDots(str, num)){
+        str += "...";
+    }
+    console.log(str, checkStringLength(str, num), addThreeDots(str));
     return str;
 }
 
-truncate("A-tisket a-tasket A green and yellow basket", 11);
+truncate("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
