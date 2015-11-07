@@ -24,3 +24,5 @@ function truncate(str, num) {
 }
 
 truncate("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
+
+//Updated git configuration... added this line to check if my commits are being properly recorded on github.
