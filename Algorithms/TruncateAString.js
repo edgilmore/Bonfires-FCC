@@ -21,3 +21,5 @@ function truncate(str, num) {
 }
 
 truncate("Absolutely Longer", 2);
+
+//added a string to get credit for my commit.
