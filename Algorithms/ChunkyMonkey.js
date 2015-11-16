@@ -5,10 +5,12 @@
 function chunk(arr, size) {
     // Break it up.
     var newArray = [];
-    while(arr.length > size){
-        newArray.push(arr.splice(0, size));
+    if (size !== 0){
+        while(arr.length > size){
+            newArray.push(arr.splice(0, size));
+        }
+        newArray.push(arr);
     }
-    newArray.push(arr);
     return newArray;
 }
 
