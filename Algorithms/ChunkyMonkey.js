@@ -1,5 +1,7 @@
 /**
  * Created by edgilmore on 11/16/2015.
+ * Instructions: Write a function that splits an array (first argument) into groups the length of size (second
+ * argument) and returns them as a multidimensional array.
  */
 'use strict';
 function chunk(arr, size) {

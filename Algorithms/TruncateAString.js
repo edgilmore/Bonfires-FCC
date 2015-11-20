@@ -1,5 +1,6 @@
 /**
  * Created by edgilmore on 11/5/2015.
+ * Instructons:
  */
 'use strict';
 function truncate(str, num) {
