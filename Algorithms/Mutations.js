@@ -8,8 +8,17 @@
  */
 'use strict';
 function mutation(arr) {
-
-    return arr;
+    var a = arr[0].toLowerCase().split('');
+    var b = arr[1].toLowerCase().split('');
+    var counter = 0;
+    for (var i = 0; i < a.length; i++){
+        if(a.indexOf(b[i]) > -1){
+            counter++;
+        }
+        if(a.length >= counter && counter > 0){
+            return true;
+        }
+    }
+    return false;
 }
-
-mutation(['hello', 'hey']);
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]);
